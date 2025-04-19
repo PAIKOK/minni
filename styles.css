@@ -3,7 +3,7 @@
     --primary-light: #3b82f6;
     --primary-dark: #1d4ed8;
     --secondary: #6366f1;
-    --light: #f3f4f6;
+    --light: white;
     --dark: #1f2937;
     --success: #10b981;
     --warning: #f59e0b;
@@ -20,14 +20,14 @@
 }
 
 body {
-    background-color: #f9fafb;
+    background-color: grey;
     color: var(--dark);
     line-height: 1.6;
 }
 
 header {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 2rem 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -64,7 +64,7 @@ header p {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
-    background-color: white;
+    background-color: lightgreen;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -116,7 +116,7 @@ header p {
 
 .week-btn:hover {
     background-color: var(--primary-light);
-    color: white;
+    color: pink;
 }
 
 .week-btn.active {
@@ -148,7 +148,7 @@ header p {
 }
 
 .danger-btn {
-    background-color: #fee2e2 !important;
+    background-color: white !important;
     border-color: var(--danger) !important;
     color: var(--danger);
 }
@@ -181,7 +181,7 @@ header p {
 
 .progress-panel,
 .notes-panel {
-    background: white;
+    background: rgb(224, 208, 233);
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -272,7 +272,7 @@ header p {
 }
 
 .content-area {
-    background: white;
+    background: lightblue;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     padding: 1.5rem;
@@ -340,7 +340,7 @@ header p {
 }
 
 .weekly-overview {
-    background-color: white;
+    background-color: lightcoral;
     padding: 2rem 0;
     margin-top: 2rem;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
