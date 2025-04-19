@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Placement Prep Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>College Placement Prep Tracker</h1>
+        <p>Your 30-Day Journey to Placement Success</p>
+        <div class="header-stats">
+            <div class="day-counter">
+                Day <span id="current-day">1</span> of 30
+            </div>
+            <div class="overall-progress">
+                Overall Progress: <span id="overall-percentage">0%</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="toolbar">
+            <div class="toolbar-left">
+                <div class="date-selector">
+                    <label for="date-select">Select Day:</label>
+                    <select id="date-select">
+                        <!-- Will be populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="week-selector">
+                    <button class="week-btn active" data-week="1">Week 1</button>
+                    <button class="week-btn" data-week="2">Week 2</button>
+                    <button class="week-btn" data-week="3">Week 3</button>
+                    <button class="week-btn" data-week="4">Week 4</button>
+                </div>
+            </div>
+            <div class="data-tools">
+                <button id="reset-progress" class="danger-btn">Reset Progress</button>
+                <button id="export-data">Export Data</button>
+                <label for="import-data" class="import-btn">Import Data</label>
+                <input type="file" id="import-data" accept=".json" style="display: none;">
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <div class="sidebar">
+                <div class="progress-panel">
+                    <h2>Daily Progress</h2>
+                    <div class="progress-circle">
+                        <div class="progress-circle-inner">
+                            <span id="day-percentage">0%</span>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-card">
+                            <div class="stat-value" id="tasks-completed">0</div>
+                            <div class="stat-label">Tasks Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="tasks-remaining">0</div>
+                            <div class="stat-label">Tasks Remaining</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notes-panel">
+                    <h2>Daily Notes</h2>
+                    <textarea id="daily-notes" placeholder="Add your notes for today..."></textarea>
+                    <button id="save-notes">Save Notes</button>
+                </div>
+            </div>
+
+            <div class="content-area">
+                <div class="daily-plan">
+                    <h2 id="current-day-title">Day 1: Arrays Basics</h2>
+
+                    <div class="time-segment">
+                        <h3>Morning (2-3 hours)</h3>
+                        <div class="task-list" id="morning-tasks">
+                            <!-- Tasks will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="time-segment">
+                        <h3>Afternoon (2-3 hours)</h3>
+                        <div class="task-list" id="afternoon-tasks">
+                            <!-- Tasks will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="time-segment">
+                        <h3>Evening (1-2 hours)</h3>
+                        <div class="task-list" id="evening-tasks">
+                            <!-- Tasks will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weekly-overview">
+        <div class="container">
+            <h2>Weekly Overview</h2>
+            <div class="week-progress-container" id="week-progress">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Jyothika K S © 2025 College Placement Prep Tracker | Stay Consistent, Stay Focused</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
